@@ -10,8 +10,8 @@ namespace WynnSecurity.Domain.Interfaces
 
         public DateTime? UpdatedDateTimeUtc { get; internal set; }
 
-        public long CreatedBy { get; internal set; }
+        public long? CreatedBy { get; internal set; }
 
-        public long UpdatedBy { get; internal set; }
+        public long? UpdatedBy { get; internal set; }
     }
 }

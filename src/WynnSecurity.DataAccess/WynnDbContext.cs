@@ -1,11 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
+﻿using EntityFramework.DbContextScope.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using WynnSecurity.DataAccess.Extensions;
 using WynnSecurity.DataAccess.Mappings;
 using WynnSecurity.Domain;
 
 namespace WynnSecurity.DataAccess
 {
-    public class WynnDbContext : DbContext
+    public class WynnDbContext : DbContext, IDbContext
     {
         public WynnDbContext(DbContextOptions options)
            : base(options)
@@ -23,8 +24,8 @@ namespace WynnSecurity.DataAccess
 
         private void ResetConventions(ModelBuilder modelBuilder)
         {
-            //modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
-            //modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+            modelBuilder.SetPluralizingTableNameConvention();
+            modelBuilder.SetOneToManyCascadeDeleteConvention();
         }
 
         private void AddConfigurations(ModelBuilder modelBuilder)

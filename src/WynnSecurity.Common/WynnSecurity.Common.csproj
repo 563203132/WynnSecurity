@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WynnSecurity.DataAccess\WynnSecurity.DataAccess.csproj" />
+    <ProjectReference Include="..\WynnSecurity.Domain\WynnSecurity.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

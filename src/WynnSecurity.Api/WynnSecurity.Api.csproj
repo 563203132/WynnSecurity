@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+    <PackageReference Include="ServiceStack.Text" Version="5.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WynnSecurity.Common\WynnSecurity.Common.csproj" />
+    <ProjectReference Include="..\WynnSecurity.DataAccess\WynnSecurity.DataAccess.csproj" />
+    <ProjectReference Include="..\WynnSecurity.Domain.Service\WynnSecurity.Domain.Service.csproj" />
+    <ProjectReference Include="..\WynnSecurity.Domain\WynnSecurity.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

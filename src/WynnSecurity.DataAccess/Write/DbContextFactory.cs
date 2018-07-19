@@ -2,7 +2,7 @@
 using System;
 using System.Linq;
 
-namespace WynnSecurity.DataAccess
+namespace WynnSecurity.DataAccess.Write
 {
     public class DbContextFactory : IDbContextFactory
     {

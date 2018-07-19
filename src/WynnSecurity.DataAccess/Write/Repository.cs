@@ -6,7 +6,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using WynnSecurity.Domain.Interfaces;
 
-namespace WynnSecurity.DataAccess
+namespace WynnSecurity.DataAccess.Write
 {
     public class Repository<TAggregateRoot> : IRepository<TAggregateRoot> where TAggregateRoot : AggregateRoot
     {

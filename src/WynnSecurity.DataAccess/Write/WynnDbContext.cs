@@ -1,10 +1,10 @@
 ﻿using EntityFramework.DbContextScope.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using WynnSecurity.DataAccess.Extensions;
-using WynnSecurity.DataAccess.Mappings;
+using WynnSecurity.DataAccess.Write.Mappings;
 using WynnSecurity.Domain;
 
-namespace WynnSecurity.DataAccess
+namespace WynnSecurity.DataAccess.Write
 {
     public class WynnDbContext : DbContext, IDbContext
     {

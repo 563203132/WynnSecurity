@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using WynnSecurity.DataAccess;
+using WynnSecurity.DataAccess.Write;
 
 namespace WynnSecurity.DataAccess.Migrations
 {

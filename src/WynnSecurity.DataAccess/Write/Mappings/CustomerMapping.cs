@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using WynnSecurity.Domain;
 
-namespace WynnSecurity.DataAccess.Mappings
+namespace WynnSecurity.DataAccess.Write.Mappings
 {
     public class CustomerMapping : IEntityTypeConfiguration<Customer>
     {

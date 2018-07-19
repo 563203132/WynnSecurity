@@ -1,7 +1,7 @@
 ﻿using EntityFramework.DbContextScope.Interfaces;
 using WynnSecurity.Domain;
 
-namespace WynnSecurity.DataAccess.Repositories
+namespace WynnSecurity.DataAccess.Write.Repositories
 {
     public class CustomerRepository : Repository<Customer>, ICustomerRepository
     {
